@@ -30,11 +30,11 @@ naturalGasData <- function() {
     
     data <- read.xlsx(fileName, 1, header=FALSE, colClasses="character", stringsAsFactors=TRUE)
     
-    #dat <- data[18:23, 7:15]
+    dat <- data[18:23, 7:15]
     
-    DT <- data.table(data)
+    #DT <- data.table(data)
     
-    DT <- DT[c(18:23)]
+    #DT <- DT[c(18:23)]
    
 }
 
