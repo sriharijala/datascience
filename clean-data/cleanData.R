@@ -53,6 +53,8 @@ readXml <- function() {
     rootNode <- xmlRoot(doc)
     
     length(getNodeSet(rootNode, '//zipcode[text()="21231"]'))
+    
+    zips <- xpathSApply(doc,'//zipcode[text()="21231"]')
 }
 
 averageValue <- function() {
